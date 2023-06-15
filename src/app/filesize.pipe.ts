@@ -8,6 +8,7 @@ export class FilesizePipe implements PipeTransform {
   transform(value: number, decimalPoint: number = 2): string {
     if (value === 0) {
       return '0 Bytes';
+
     }
 
     const k = 1024;
